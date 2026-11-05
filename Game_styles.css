@@ -1,0 +1,50 @@
+/* Mouse Bird Game - CSW 38 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f5f7;
+  font-family: Arial, sans-serif;
+}
+
+.game-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+h1 {
+  margin: 0;
+  color: #18334a;
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+.instructions {
+  max-width: 320px;
+  margin: 0 0 4px;
+  color: #263746;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  width: min(320px, 94vw);
+  height: auto;
+  aspect-ratio: 2 / 3;
+  margin: 0 auto;
+  border: 1px solid #0a3cda;
+  background: #60bfd1 url("back.png") center / 100% 100% no-repeat;
+  touch-action: none;
+}
